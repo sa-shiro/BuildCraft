@@ -228,7 +228,7 @@ public class BCCoreConfig {
         none.setTo(propMiningMultiplier);
 
         propMiningMaxDepth = config.get(general, "miningMaxDepth", 512);
-        propMiningMaxDepth.setMinValue(32).setMaxValue(4096);
+        propMiningMaxDepth.setMinValue(32).setMaxValue(16777216);
         propMiningMaxDepth.setComment("How much further down can miners (like the quarry or the mining well) dig?"
             + "\n(Note: values above 256 only have an effect if a mod like cubic chunks is installed).");
         none.setTo(propMiningMaxDepth);
